@@ -1,5 +1,11 @@
+// Write your solution here!
+
+// Write your solution in this file!
+
+// Write your solution here!
+
 let cats = ["Milo", "Otis", "Garfield"];
-// cats.push(Ralph);
+// cats.push(`Ralph`);
 // cats;
 // const destructivelyAppendCat = cats.push('Ralph')
 // console.log(destructivelyAppendCat)
@@ -8,8 +14,10 @@ let cats = ["Milo", "Otis", "Garfield"];
 //     cats.push("Ralph")
 //     console.log(destructivelyAppendCat);
 // }
+
 // destructivelyAppendCat(cats) = cats.push('Ralph');
 // console.log(destructivelyAppendCat)
+
 // function destructivelyAppendCat(name = 'Ralph'){
 //     var newArray = cats.slice();
 //     // or ES6 way
@@ -17,6 +25,7 @@ let cats = ["Milo", "Otis", "Garfield"];
 //     newArray.push(name)
 //     return newArray
 //   }
+
 function destructivelyAppendCat(name){
     cats.push(name);
     return cats ;
@@ -41,6 +50,7 @@ function prependCat(name){
     let nameCat2=[name, ...cats];
     return nameCat2;
 }
+
 function removeLastCat(){
     let removeCat = cats.slice(0,cats.length-1);
     return removeCat;
